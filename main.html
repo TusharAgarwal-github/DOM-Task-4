@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<!-- CSS -->
+		<link
+			rel="stylesheet"
+			href="/Users/tusharagarwal/Desktop/JS/DOM-Task-4/styles.css"
+		/>
+	</head>
+	<body>
+    
+    <div class="card mx-auto my-5">
+      <div class="card-body">
+          <h5 class="card-title text-center">Form</h5>
+          <h6 class="card-subtitle mb-2 text-muted text-center">Food Form</h6>
+          <br>
+          <form id="form" action="">
+              <div class="form-group">
+                  <label for="">Enter First Name</label>
+                  <input type="text" class="form-control" name="" id="firstName" placeholder="John" autofocus required>
+                  <br>
+                  <label for="">Enter Last Name</label>
+                  <input type="text" class="form-control" name="" id="lastName" placeholder="Smith" required>
+                  <br>
+                  <label for="">Address Line 1</label>
+                  <input type="text" class="form-control" name="" id="address1" placeholder="999, City, India" required>
+                  <br>
+                  <label for="">Address Line 2</label>
+                  <input type="text" class="form-control" name="" id="address2" placeholder="999, City, India">
+                  <br>
+                  <label for="">State</label>
+                  <input type="text" class="form-control" name="" id="state" placeholder="State" required>
+                  <br>          
+                  <label for="">Country</label>
+                  <input type="text" class="form-control" name="" id="country" placeholder="Country Name" required>
+                  <br>                     
+                  <label for="">Pincode</label>
+                  <input type="text" pattern="[0-9]{6}" class="form-control" name="" id="pin" placeholder="000000" maxlength="6" required>
+                  <br>
+                  <div class="form-group">
+                    <label for="">Gender</label>
+                    <select class="form-control" name="" id="sex" required>
+                      <option>-------</option>
+                      <option>Male</option>
+                      <option>Female</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                  <fieldset class = "foodchoices">
+                    <legend>
+                      Food choice (select two)
+                    </legend>
+                    <div class="form-check mb-2 mr-sm-2">
+                    <input class="form-check-input" type="checkbox" id="foodlist" value="Noodles">
+                    <label class="form-check-label" for="">
+                      Noodles
+                    </label>
+                    </div>
+                    <div class="form-check mb-2 mr-sm-2">
+                      <input class="form-check-input" type="checkbox" id="foodlist" value="Burger">
+                      <label class="form-check-label" for="">
+                        Burger
+                      </label>
+                    </div>
+                    <div class="form-check mb-2 mr-sm-2">
+                      <input class="form-check-input" type="checkbox" id="foodlist" value="Sandwich">
+                      <label class="form-check-label" for=" ">
+                        Sandwich
+                      </label>
+                    </div>
+                    <div class="form-check mb-2 mr-sm-2">
+                      <input class="form-check-input" type="checkbox" id="foodlist" value="Pizza">
+                      <label class="form-check-label" for=" ">
+                        Pizza
+                      </label>
+                    </div>
+                    <div class="form-check mb-2 mr-sm-2">
+                      <input class="form-check-input" type="checkbox" id="foodlist" value="Pasta">
+                      <label class="form-check-label" for=" ">
+                        Pasta
+                      </label>
+                  </fieldset>
+                  </div>
+              </div>
+              <button type="submit" id="submitBtn" class="btn btn-primary float-right">Submit</button>  
+          </form>        
+      </div>
+  </div>
+  <hr>
+  
+
+		<script src="/Users/tusharagarwal/Desktop/JS/DOM-Task-4/script.js"></script>
+	</body>
+</html>
